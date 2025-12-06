@@ -1,3 +1,5 @@
+import './FruitCounter.css'
+
 function FruitCounter(props) {
     const label = props.label;
     const count = props.count;

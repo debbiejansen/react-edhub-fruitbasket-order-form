@@ -38,32 +38,33 @@ function App() {
 
     return (
         <>
-            <div className="container">
+            <header>
                 <h1>Fruitmand bezorgservice</h1>
+                <div className="container">
 
                 <FruitCounter
-                label="🍓 Aardbeien"
+                label="Aardbeien"
                 count={counts.strawberry}
                 onIncrease={function () { increase("strawberry");}}
                 onDecrease={function () { decrease("strawberry");}}
                 />
 
                 <FruitCounter
-                    label="🍌 Bananen"
+                    label="Bananen"
                     count={counts.banana}
                     onIncrease={function () { increase("banana");}}
                     onDecrease={function () { decrease("banana");}}
                 />
 
                 <FruitCounter
-                    label="🍎 Appels"
+                    label="Appels"
                     count={counts.apple}
                     onIncrease={function () { increase("apple");}}
                     onDecrease={function () { decrease("apple");}}
                 />
 
                 <FruitCounter
-                    label="🥝 Kiwi's"
+                    label="Kiwi's"
                     count={counts.kiwi}
                     onIncrease={function () { increase("kiwi");}}
                     onDecrease={function () { decrease("kiwi");}}
@@ -72,7 +73,8 @@ function App() {
                 <button onClick={resetAll} className="reset-button">
                     Reset
                 </button>
-            </div>
+                </div>
+            </header>
         </>
     )
 }
