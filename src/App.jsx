@@ -1,5 +1,6 @@
 import './App.css'
 import {useState} from "react";
+import FruitCounter from "./components/FruitCounter.jsx";
 
 function App() {
     const [counts, setCounts] = useState({
@@ -39,57 +40,35 @@ function App() {
         <>
             <div className="container">
                 <h1>Fruitmand bezorgservice</h1>
-                <div className={"card"}>
-                    <h2>🍓 Aardbeien</h2>
-                    <button onClick={function () {
-                        decrease("strawberry");
-                    }}> -
-                    </button>
-                    {counts.strawberry}
-                    <button onClick={function () {
-                        increase("strawberry");
-                    }}> +
-                    </button>
-                </div>
 
-                <div className="card">
-                    <h2>🍌 Bananen</h2>
-                    <button onClick={function () {
-                        decrease("banana");
-                    }}>-
-                    </button>
-                    {counts.banana}
-                    <button onClick={function () {
-                        increase("banana");
-                    }}>+
-                    </button>
-                </div>
+                <FruitCounter
+                label="🍓 Aardbeien"
+                count={counts.strawberry}
+                onIncrease={function () { increase("strawberry");}}
+                onDecrease={function () { decrease("strawberry");}}
+                />
 
-                <div className="card">
-                    <h2>🍎 Appels</h2>
-                    <button onClick={function () {
-                        decrease("apple");
-                    }}>-
-                    </button>
-                    {counts.apple}
-                    <button onClick={function () {
-                        increase("apple");
-                    }}>+
-                    </button>
-                </div>
+                <FruitCounter
+                    label="🍌 Bananen"
+                    count={counts.banana}
+                    onIncrease={function () { increase("banana");}}
+                    onDecrease={function () { decrease("banana");}}
+                />
 
-                <div className="card">
-                    <h2>🥝 Kiwi's</h2>
-                    <button onClick={function () {
-                        decrease("kiwi");
-                    }}>-
-                    </button>
-                    {counts.kiwi}
-                    <button onClick={function () {
-                        increase("kiwi");
-                    }}>+
-                    </button>
-                </div>
+                <FruitCounter
+                    label="🍎 Appels"
+                    count={counts.apple}
+                    onIncrease={function () { increase("apple");}}
+                    onDecrease={function () { decrease("apple");}}
+                />
+
+                <FruitCounter
+                    label="🥝 Kiwi's"
+                    count={counts.kiwi}
+                    onIncrease={function () { increase("kiwi");}}
+                    onDecrease={function () { decrease("kiwi");}}
+                />
+
                 <button onClick={resetAll} className="reset-button">
                     Reset
                 </button>
