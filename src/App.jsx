@@ -108,50 +108,50 @@ function App() {
             </header>
 
             <form onSubmit={handleSubmit} className="form">
-<fieldset>
-                <legend>Gegevens</legend>
-                <label htmlFor="first-name-field">
-                    Voornaam
-                    <input
-                        type="text"
-                        value={firstNameValue}
-                        onChange={(e) => setFirstNameValue(e.target.value)}
-                        id="name-field"
-                        name="name"
-                    />
-                </label>
-                <label htmlFor="last-name-field">
-                    Achternaam
-                    <input
-                        type="text"
-                        value={lastNameValue}
-                        onChange={(e) => setLastNameValue(e.target.value)}
-                        id="name-field"
-                        name="name"
-                    />
-                </label>
-                <label htmlFor="age-field">
-                    Leeftijd:
-                    <input
-                        type="number"
-                        value={ageValue}
-                        onChange={(e) => setAgeValue(parseInt(e.target.value))}
-                        id="age-field"
-                        name="age"
-                        placeholder="0"
-                    />
-                </label>
-                <label htmlFor="postcode-field">
-                    Postcode
-                    <input
-                        type="text"
-                        value={postcodeValue}
-                        onChange={(e) => setPostcodeValue(e.target.value)}
-                        id="name-field"
-                        name="name"
-                    />
-                </label>
-</fieldset>
+                <fieldset>
+                    <legend>Gegevens</legend>
+                    <label htmlFor="first-name-field">
+                        Voornaam
+                        <input
+                            type="text"
+                            value={firstNameValue}
+                            onChange={(e) => setFirstNameValue(e.target.value)}
+                            id="name-field"
+                            name="name"
+                        />
+                    </label>
+                    <label htmlFor="last-name-field">
+                        Achternaam
+                        <input
+                            type="text"
+                            value={lastNameValue}
+                            onChange={(e) => setLastNameValue(e.target.value)}
+                            id="name-field"
+                            name="name"
+                        />
+                    </label>
+                    <label htmlFor="age-field">
+                        Leeftijd:
+                        <input
+                            type="number"
+                            value={ageValue}
+                            onChange={(e) => setAgeValue(parseInt(e.target.value))}
+                            id="age-field"
+                            name="age"
+                            placeholder="0"
+                        />
+                    </label>
+                    <label htmlFor="postcode-field">
+                        Postcode
+                        <input
+                            type="text"
+                            value={postcodeValue}
+                            onChange={(e) => setPostcodeValue(e.target.value)}
+                            id="name-field"
+                            name="name"
+                        />
+                    </label>
+                </fieldset>
 
                 <fieldset>
                     <legend>Bezorgfrequentie</legend>
@@ -164,30 +164,30 @@ function App() {
                         <option value="wekelijks">Om de week</option>
                         <option value="maandelijks">Maandelijks</option>
                     </select>
-                <div>
-                    <label htmlFor="form-day-time">
-                        <input
-                            type="radio"
-                            id="form-day-time"
-                            name="delivery-time"
-                            value="day"
-                            checked={timeOfDayValue === 'day'}
-                            onChange={(e) => setTimeOfDayValue(e.target.value)}
-                        />
-                        Overdag
-                    </label>
-                    <label htmlFor="form-night-time">
-                        <input
-                            type="radio"
-                            id="form-night-time"
-                            name="delivery-time"
-                            value="night"
-                            checked={timeOfDayValue === 'night'}
-                            onChange={(e) => setTimeOfDayValue(e.target.value)}
-                        />
-                        Savonds
-                    </label>
-                </div>
+                    <div>
+                        <label htmlFor="form-day-time">
+                            <input
+                                type="radio"
+                                id="form-day-time"
+                                name="delivery-time"
+                                value="day"
+                                checked={timeOfDayValue === 'day'}
+                                onChange={(e) => setTimeOfDayValue(e.target.value)}
+                            />
+                            Overdag
+                        </label>
+                        <label htmlFor="form-night-time">
+                            <input
+                                type="radio"
+                                id="form-night-time"
+                                name="delivery-time"
+                                value="night"
+                                checked={timeOfDayValue === 'night'}
+                                onChange={(e) => setTimeOfDayValue(e.target.value)}
+                            />
+                            Savonds
+                        </label>
+                    </div>
                     <label htmlFor="message-field">
                     </label>
                     <textarea
@@ -201,17 +201,17 @@ function App() {
                     />
 
 
-                <label htmlFor="form-newsletter">
-                    <input
-                        type="checkbox"
-                        id="form-newsletter"
-                        name="newsletter"
-                        checked={newsletterValue}
-                        onChange={() => setNewsletterValue(!newsletterValue)}
-                    />
-                    Ik ga akkoord met de voorwaarden
-                </label>
-            </fieldset>
+                    <label htmlFor="form-newsletter">
+                        <input
+                            type="checkbox"
+                            id="form-newsletter"
+                            name="newsletter"
+                            checked={newsletterValue}
+                            onChange={() => setNewsletterValue(!newsletterValue)}
+                        />
+                        Ik ga akkoord met de voorwaarden
+                    </label>
+                </fieldset>
                 <button type="submit">Verzenden</button>
             </form>
 
