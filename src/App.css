@@ -53,6 +53,7 @@ header {
     align-items: center;
     gap: 10px;
     margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 form button {
@@ -69,8 +70,10 @@ form button {
 fieldset {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 15px 30px;
+    width: 500px;
+    gap: 15px;
+    padding: 20px 35px;
+    margin-bottom: 20px;
 }
 
 /* --------------- 2.5 Reset Button ------------------------- */
